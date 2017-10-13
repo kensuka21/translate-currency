@@ -8,13 +8,25 @@ class App extends Component {
       <div className="container-fluid">
         <div className="row">
           <div className="col-xs-6 text-center">
-              <input className="" type="text"/>
+              <div className="row input-currency">
+                  <div className="col-xs-4"></div>
+                  <div className="col-xs-4">
+                      <input className="form-control" type="text"/>
+                  </div>
+                  <div className="col-xs-4"></div>
+              </div>
           </div>
 
           <div className="separator"></div>
 
           <div className="col-xs-6 text-center">
-              <input className="" type="text"/>
+              <div className="row">
+                  <div className="col-xs-4"></div>
+                  <div className="col-xs-4">
+                      <input className="form-control" type="text"/>
+                  </div>
+                  <div className="col-xs-4"></div>
+              </div>
           </div>
         </div>
       </div>
@@ -23,4 +35,5 @@ class App extends Component {
 }
 
 export default App;
+
 
