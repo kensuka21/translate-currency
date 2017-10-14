@@ -1,12 +1,38 @@
-.separator {
+.top-separator {
     width: 0.1em;
-    height: 80vh;
+    height: 24vh;
     position: absolute;
     left: 50%;
     background-color: #bbbbbb;
     margin: 100px 0 100px 0;
 }
 
-.input-currency {
-    margin-top: 50%;
+.bottom-separator {
+    width: 0.1em;
+    height: 28vh;
+    position: absolute;
+    left: 50%;
+    background-color: #bbbbbb;
+    margin: 20px 0 100px 0;
+}
+
+.vertical-center {
+    margin-top: 45%;
+}
+
+.btn-vertical-center{
+    margin-top: 36vh;
+}
+
+.img-thumbnail{
+    padding: 2px !important;;
+}
+
+.header{
+    margin-top: 3%;
+    margin-bottom: -3%;
+}
+
+.input-group {
+    margin-top: 10px;
 }
