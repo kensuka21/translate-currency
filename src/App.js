@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
 import dominicanFlag from './assets/images/dominican.jpg';
 import usaFlag from './assets/images/usa.jpg';
 import './App.css';
+import rates from './rates';
 
 class App extends Component {
     constructor(props) {
@@ -11,6 +11,10 @@ class App extends Component {
         this.state = {
         };
     }
+
+    translateCurrency = () => {
+
+    };
 
     render() {
         return (
