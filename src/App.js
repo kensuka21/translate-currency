@@ -12,6 +12,7 @@ class App extends Component {
         };
     }
 
+    //TODO: Do the multiplication of the input and rates.
     translateCurrency = () => {
 
     };
