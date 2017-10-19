@@ -1,6 +1,6 @@
 .top-separator {
     width: 0.1em;
-    height: 24vh;
+    height: 27vh;
     position: absolute;
     left: 50%;
     background-color: #bbbbbb;
@@ -9,7 +9,7 @@
 
 .bottom-separator {
     width: 0.1em;
-    height: 28vh;
+    height: 42vh;
     position: absolute;
     left: 50%;
     background-color: #bbbbbb;
@@ -21,7 +21,7 @@
 }
 
 .btn-vertical-center{
-    margin-top: 36vh;
+    margin-top: 40vh;
 }
 
 .img-thumbnail{

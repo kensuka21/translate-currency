@@ -9,12 +9,28 @@ class App extends Component {
         super(props);
 
         this.state = {
+            dop: '',
+            usd: ''
         };
     }
 
-    //TODO: Do the multiplication of the input and rates.
-    translateCurrency = () => {
+    translateCurrency = (evt) => {
+        evt.preventDefault();
 
+        if(!this.state.dop) return;
+
+        this.setState({
+            usd: parseFloat(this.state.dop / rates.dollar.dop).toFixed(2)
+        });
+    };
+
+    onInputChange = (evt) => {
+        const field = evt.target.name;
+        const value = evt.target.value;
+
+        this.setState({
+            [field]: value
+        });
     };
 
     render() {
@@ -23,8 +39,7 @@ class App extends Component {
                 <div className="header">
                     <h2 className="text-center">CURRENCY TRANSLATOR</h2>
                 </div>
-                <div className="row">
-
+                <form onSubmit={this.translateCurrency} className="row">
                     <div className="col-xs-5 text-center">
                         <div className="vertical-center">
                             <div className="row ">
@@ -33,7 +48,7 @@ class App extends Component {
                                     <img className="img img-thumbnail" src={dominicanFlag} width="200" height="95"/>
                                     <div className="input-group">
                                         <span className="input-group-addon">$</span>
-                                        <input type="number" step="any" className="form-control"
+                                        <input value={this.state.dop} onChange={this.onInputChange} name="dop" type="number" step="any" className="form-control"
                                                placeholder="DOP"/>
                                     </div>
                                 </div>
@@ -57,14 +72,14 @@ class App extends Component {
                                     <img className="img img-thumbnail" src={usaFlag} width="200" height="95"/>
                                     <div className="input-group">
                                         <span className="input-group-addon">$</span>
-                                        <input readOnly type="text" className="form-control"
+                                        <input value={this.state.usd} readOnly type="text" className="form-control"
                                                placeholder="USD"/>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         );
     }
