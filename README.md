@@ -13,3 +13,5 @@ npm install
 npm start
 ```
 - Go to the url: http://localhost:3000
+
+![alt text](screenshots/demo.png "")
