@@ -1,5 +1,5 @@
 export default {
     dollar: {
-        dop: 48.00
+        dop: 49.40
     }
 }
